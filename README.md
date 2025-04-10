@@ -19,7 +19,7 @@ This is a component-driven development environment using **Fractal** to document
 ---
 
 ## 📁 Project Structure
-
+```
 ├── README.md
 ├── components
 │   ├── _previews
@@ -45,3 +45,5 @@ This is a component-driven development environment using **Fractal** to document
 │   ├── main.js
 │   └── style.css
 └── vite.config.js
+
+```
