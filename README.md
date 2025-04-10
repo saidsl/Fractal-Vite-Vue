@@ -1,6 +1,8 @@
 
 # Fractal + Vite + Vue Component Library
 
+> **NOTE** Very basic implementation and to be improved further 
+
 This is a component-driven development environment using **Fractal** to document and organize UI components, powered by **Vite** for lightning-fast development and **Vue 3** for component rendering.
 
 > Designed for building, previewing, and documenting reusable frontend components with live reloading and full variant support.
