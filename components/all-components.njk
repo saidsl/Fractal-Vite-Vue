@@ -24,13 +24,26 @@
 
     {% for variant in ['primary', 'secondary', 'disabled'] %}
       <div
-        class="vue-app"
         data-label="{{ variant | capitalize }} Button"
         data-variant="{{ variant }}"
         data-disabled="{{ variant == 'disabled' }}"
       ></div>
     {% endfor %}
   </div>
+
+  {% set components = fractal.components %}
+
+{% for component in components %}
+  {% if component.variants.size > 1 %}
+    <h2>{{ component.handle }}</h2>
+    {% for variant in component.variants %}
+      <h3>{{ variant.name }}</h3>
+      {{ variant.rendered | safe }}
+    {% endfor %}
+  {% else %}
+    {{ component.rendered | safe }}
+  {% endif %}
+{% endfor %}
 
   <!-- Add more component blocks here later -->
 

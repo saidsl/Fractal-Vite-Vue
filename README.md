@@ -7,8 +7,6 @@ This is a component-driven development environment using **Fractal** to document
 
 > Designed for building, previewing, and documenting reusable frontend components with live reloading and full variant support.
 
-
-
 ---
 
 ## 📦 Tech Stack
@@ -19,33 +17,3 @@ This is a component-driven development environment using **Fractal** to document
 - [Nunjucks](https://mozilla.github.io/nunjucks/) — Templating engine for Fractal views
 
 ---
-
-## 📁 Project Structure
-```
-├── README.md
-├── components
-│   ├── _previews
-│   │   ├── preview-all.njk
-│   │   └── preview.njk
-│   ├── all-components.njk
-│   └── button
-│       ├── button--all.njk
-│       ├── button.config.js
-│       └── button.njk
-├── docs
-│   └── index.md
-├── fractal.js
-├── package-lock.json
-├── package.json
-├── public
-│   └── assets
-│       ├── main-BjW-RWFw.css
-│       └── main-BrSPnF9N.js
-├── src
-│   ├── components
-│   │   └── Button.vue
-│   ├── main.js
-│   └── style.css
-└── vite.config.js
-
-```
