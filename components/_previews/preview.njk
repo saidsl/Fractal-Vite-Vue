@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <!-- Hardcoded for dev: always load Vite's main.js -->
+  <script type="module" src="http://localhost:3000/main.js"></script>
+</head>
+<body>
+  <h1>Preview 1</h1>
+  {{ yield | safe }}
+</body>
+</html>

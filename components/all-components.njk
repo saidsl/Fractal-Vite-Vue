@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Components</title>
+  <script type="module" src="http://localhost:3000/main.js"></script>
+  <style>
+    .component-block {
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px dashed #ccc;
+    }
+    .component-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="component-block">
+    <div class="component-title">Button Variants</div>
+
+    {% for variant in ['primary', 'secondary', 'disabled'] %}
+      <div
+        class="vue-app"
+        data-label="{{ variant | capitalize }} Button"
+        data-variant="{{ variant }}"
+        data-disabled="{{ variant == 'disabled' }}"
+      ></div>
+    {% endfor %}
+  </div>
+
+  <!-- Add more component blocks here later -->
+
+</body>
+</html>
