@@ -1,5 +1,5 @@
 module.exports = {
-  preview: '@preview-all',
+  preview: '@preview',
   context: {
     // Default context if no variants are selected
     label: 'Default Button',

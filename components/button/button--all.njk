@@ -1,13 +1,12 @@
-<!-- Mount target for Vue -->
-<h1>Buttons</h1>
 
-<!-- This renders inside the preview layout's {{ yield }} -->
 
-{% for variant in ['primary', 'secondary', 'disabled'] %}
-  <div
-    class="vue-app"
-    data-label="{{ variant | capitalize }} Button"
-    data-variant="{{ variant }}"
-    data-disabled="{{ variant == 'disabled' }}"
-  ></div>
+
+{% set variants = [
+  { label: 'Primary Button', variant: 'primary', disabled: false },
+  { label: 'Secondary Button', variant: 'secondary', disabled: false },
+  { label: 'Disabled Button', variant: 'disabled', disabled: true }
+] %}
+
+{% for variant in variants %}
+  {% render '@button', variant %}
 {% endfor %}
